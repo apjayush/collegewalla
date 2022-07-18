@@ -1,0 +1,20 @@
+[
+  {
+    "id": "01",
+    "Name": "Megha Boys Hostel",
+    "Charges": 3000
+
+  },
+    
+  {
+    "id": "02",
+    "Name": "Muskan Hostel",
+    "Charges": 3500
+  },
+
+  {
+    "id": "01",
+    "Name": "Mahadev Hostel",
+    "Charges": 2700
+  }
+]

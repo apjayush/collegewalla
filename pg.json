@@ -1,20 +1,26 @@
 [
   {
-    "id": "01",
+    "id": 0,
     "Name": "Megha Boys Hostel",
-    "Charges": 3000
+    "Charges": 3000,
+    "distance": 0,
+    "mobile": 8529750269
 
   },
     
   {
-    "id": "02",
+    "id": 1,
     "Name": "Muskan Hostel",
-    "Charges": 3500
+    "Charges": 3500,
+    "distance": 1,
+    "mobile": 731579993
   },
 
   {
-    "id": "01",
+    "id": 2,
     "Name": "Mahadev Hostel",
-    "Charges": 2700
+    "Charges": 2700,
+    "distance": 2,
+    "mobile": 9507847859
   }
 ]

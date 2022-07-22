@@ -4,7 +4,8 @@
     "Name": "Megha Boys Hostel",
     "Charges": 3000,
     "distance": 0,
-    "mobile": 8529750269
+    "mobile": 8529750269,
+    "cat": "hostel"
 
   },
     
@@ -13,7 +14,8 @@
     "Name": "Muskan Hostel",
     "Charges": 3500,
     "distance": 1,
-    "mobile": 731579993
+    "mobile": 731579993,
+    "cat": "hostel"
   },
 
   {
@@ -21,6 +23,16 @@
     "Name": "Mahadev Hostel",
     "Charges": 2700,
     "distance": 2,
-    "mobile": 9507847859
+    "mobile": 9507847859,
+    "cat": "mess"
+  },
+
+  {
+    "id": 3,
+    "Name": "Pappu mess",
+    "Charges": 2700,
+    "distance": 2,
+    "mobile": 9507847859,
+    "cat": "mess"
   }
 ]

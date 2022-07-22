@@ -1,0 +1,10 @@
+
+.navbar-brand:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+
+.navbar{
+    background-color: #f49e9e1a;
+}

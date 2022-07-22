@@ -1,22 +1,48 @@
-console.log('This is collegewalla website');
+
+
+let input1 = document.getElementById('input1');
+let input2 = document.getElementById('input2');
+
+input1.addEventListener('click', function(){
+  input1.value = 'checked';
+  xhr.onload()
+});
+
+input2.addEventListener('click', function(){
+  input2.value = 'checked';
+  xhr.onload()
+});
+
+
 
 const xhr = new XMLHttpRequest();
 
 xhr.open('GET', 'pg.json', true);
 
 xhr.onload = function(){
+
+    if(input1.value=='checked'){
     arr = JSON.parse(this.responseText);
-    // console.log(arr.length)
+    arr.sort(function(a,b){
+      return a.Charges - b.Charges
+    })
+    input1.value='';
+    
+  }
+  else if(input2.value=='checked'){
+     arr = JSON.parse(this.responseText);
+     arr.sort(function (a, b) {
+       return b.Charges - a.Charges;
+     });
+     input2.value= '';
+  }
+  else{
+    arr = JSON.parse(this.responseText);
+  }
+   
     let content = document.getElementById('content')
     let html = '';
     for(let i=0; i<arr.length; i++){
-//         html += `<div class="card my-3" style= "height: 14rem;">
-//   <img src="..." class="card-img-top" alt="...">
-//   <div class="card-body">
-//     <h5 class="card-title">${arr[i].Name}</h5>
-//     <p class="card-text">Charges are ${arr[i].Charges}</p>
-//   </div>
-// </div>`;
        html += ` <div class="card mx-3 my-3" style="width: 18rem;">
   <img src="https://s3-ap-southeast-1.amazonaws.com/bsy/iportal/images/airtel-logo-white-text-vertical.jpg" class="card-img-top" alt="..." style="height: 15rem; width:17rem; margin-left: -5px;">
   <div class="card-body">
@@ -52,7 +78,12 @@ function copyText(id){
  cb.writeText(arr[parseInt(id)].mobile).then(() => alert("copied")); 
 }
 
+
+
+
+
 xhr.send();
+
 
 
 
